@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="font-primary">
+<html lang="pt-BR" class="font-primary">
   <head>
     <!-- Title -->
     <title>Felipe Jorge Sales da Silva — Senior FullStack Engineer</title>
-    <meta name="description" content="Felipe Jorge Sales da Silva — Senior FullStack Engineer: Angular, React, TypeScript, Java, Spring Boot, sistemas bancários e automação com IA (Claude Code, Cursor). Portfólio, experiência e contato.">
+    <meta name="description" id="metaDescription" content="Felipe Jorge Sales da Silva — Senior FullStack Engineer: Angular, React, TypeScript, Java, Spring Boot, sistemas bancários e automação com IA (Claude Code, Cursor). Portfólio, experiência e contato.">
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -64,25 +64,29 @@
 
             <!-- Navigation -->
             <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
-              <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+              <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto align-items-center">
                 <li class="nav-item g-mx-20--lg">
                   <a href="#" class="nav-link g-px-0">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item g-mx-20--lg">
-                  <a href="#sobre" class="nav-link g-px-0">Sobre</a>
+                  <a href="#sobre" class="nav-link g-px-0" data-i18n="nav.sobre">Sobre</a>
                 </li>
 
                 <li class="nav-item g-mx-20--lg">
-                  <a href="#experiencia" class="nav-link g-px-0">Experiência</a>
+                  <a href="#experiencia" class="nav-link g-px-0" data-i18n="nav.experiencia">Experiência</a>
                 </li>
 
                 <li class="nav-item g-mx-20--lg">
-                  <a href="#projetos" class="nav-link g-px-0">Projetos</a>
+                  <a href="#projetos" class="nav-link g-px-0" data-i18n="nav.projetos">Projetos</a>
                 </li>
 
                 <li class="nav-item g-ml-20--lg g-mr-0--lg">
-                  <a href="#contato" class="nav-link g-px-0">Contato</a>
+                  <a href="#contato" class="nav-link g-px-0" data-i18n="nav.contato">Contato</a>
+                </li>
+
+                <li class="nav-item g-ml-20--lg g-mr-0--lg">
+                  <button id="langToggle" type="button" class="nav-link" style="background:none; border:1px solid currentColor; border-radius:20px; padding:5px 16px; font-size:12px; letter-spacing:1px; cursor:pointer;" aria-label="Trocar idioma / Switch language">EN</button>
                 </li>
               </ul>
             </div>
@@ -145,7 +149,7 @@
                 <div id="experiencia" class="g-mt-30">
                   <div class="d-flex align-items-center flex-nowrap justify-content-center justify-content-sm-start g-mb-30" style="gap:10px;">
                     <span class="g-font-weight-700 g-color-primary" style="font-size:44px; line-height:1; flex:0 0 auto;">10+</span>
-                    <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-0" style="font-size:clamp(11px, 3.4vw, 16px); white-space:nowrap;">anos construindo sistemas</h3>
+                    <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-0" style="font-size:clamp(11px, 3.4vw, 16px); white-space:nowrap;" data-i18n="hero.years">anos construindo sistemas</h3>
                   </div>
                   <div class="marquee-wrap g-mb-30">
                     <div class="marquee-track" id="expMarquee">
@@ -159,8 +163,8 @@
                               <span class="g-font-size-12 g-color-gray-dark-v4">mar/2021 – fev/2026</span>
                             </div>
                           </div>
-                          <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10">Dev Full Stack Sênior</div>
-                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Sistemas bancários críticos — Internet Banking, Pix, cartões. Criou vários microsserviços do zero e foi um dos responsáveis pela arquitetura da nova home do Internet Banking. Ajudou a implantar revisão de código entre desenvolvedores e um fluxo de trabalho em equipe com Git (Gitflow), além de disseminar boas práticas de performance, como carregamento sob demanda (lazy loading).</p>
+                          <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10" data-i18n="exp.santander.role">Dev Full Stack Sênior</div>
+                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="exp.santander.desc">Sistemas bancários críticos — Internet Banking, Pix, cartões. Criou vários microsserviços do zero e foi um dos responsáveis pela arquitetura da nova home do Internet Banking. Ajudou a implantar revisão de código entre desenvolvedores e um fluxo de trabalho em equipe com Git (Gitflow), além de disseminar boas práticas de performance, como carregamento sob demanda (lazy loading).</p>
                         </div>
                       </div>
 
@@ -174,15 +178,15 @@
                               <span class="g-font-size-12 g-color-gray-dark-v4">mai/2018 – mar/2021</span>
                             </div>
                           </div>
-                          <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10">Dev Full Stack</div>
-                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Alocado nos clientes VistaJet (equipe internacional) e Bradesco. Monitora foi posteriormente adquirida pela Marlabs.</p>
+                          <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10" data-i18n="exp.monitora.role">Dev Full Stack</div>
+                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="exp.monitora.desc">Alocado nos clientes VistaJet (equipe internacional) e Bradesco. Monitora foi posteriormente adquirida pela Marlabs.</p>
                         </div>
                       </div>
 
                       <div class="marquee-card">
                         <div class="u-shadow-v21 g-bg-white g-brd-around g-brd-gray-light-v4 g-rounded-5 g-pa-30 h-100" style="position:relative;">
                           <span style="position:absolute; top:-10px; right:16px; background:#72c02c; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; box-shadow:0 2px 6px rgba(0,0,0,.15);">4 anos</span>
-                          <h4 class="h6 g-mb-0">Início de carreira</h4>
+                          <h4 class="h6 g-mb-0" data-i18n="exp.early.title">Início de carreira</h4>
                           <span class="g-font-size-12 g-color-gray-dark-v4 d-block g-mb-10">2014 – 2018</span>
                           <div class="d-flex g-mb-10" style="gap:8px;">
                             <span class="logo-chip logo-chip--sm"><img src="assets/img/custom/logos/xtech.webp" alt="Logo Xtech"></span>
@@ -191,7 +195,7 @@
                             <span class="logo-chip logo-chip--sm"><img src="assets/img/custom/logos/roadie.webp" alt="Logo Roadie"></span>
                           </div>
                           <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10">Xtech · Kife · Viskoo · Roadie</div>
-                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Trabalhando em diversas agências de publicidade, criando websites, blogs, sistemas, aplicativos e e-commerce — ritmo intenso na Xtech, média de 2 sites novos por semana. Boa parte dos projetos abaixo vem desse período.</p>
+                          <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="exp.early.desc">Trabalhando em diversas agências de publicidade, criando websites, blogs, sistemas, aplicativos e e-commerce — ritmo intenso na Xtech, média de 2 sites novos por semana. Boa parte dos projetos abaixo vem desse período.</p>
                         </div>
                       </div>
                     </div>
@@ -200,7 +204,7 @@
                 <!-- Fim Experiência -->
 
                 <!-- Bolhas flutuantes de tecnologias -->
-                <div class="bubbles-field" id="bubblesField" role="img" aria-label="Tecnologias: Angular, React, TypeScript, Go, Svelte 5, MySQL, Oracle, Firestore, Microsserviços, GraphQL, Spring Boot, Docker, Java, Claude Code, CI/CD, Cloudflare, PWA, Google Cloud, Testes Automatizados, Micro Frontends"></div>
+                <div class="bubbles-field" id="bubblesField" role="img" data-i18n-attr="aria-label:bubbles.aria" aria-label="Tecnologias: Angular, React, TypeScript, Go, Svelte 5, MySQL, Oracle, Firestore, Microsserviços, GraphQL, Spring Boot, Docker, Java, Claude Code, CI/CD, Cloudflare, PWA, Google Cloud, Testes Automatizados, Micro Frontends"></div>
                 <!-- End Bolhas -->
               
             </div>
@@ -246,7 +250,7 @@
 
       <!-- Formação -->
       <section id="formacao" class="container g-pt-50 g-pb-0">
-        <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-30"><i class="fa fa-graduation-cap g-color-primary g-pr-8"></i> Formação</h3>
+        <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-30"><i class="fa fa-graduation-cap g-color-primary g-pr-8"></i> <span data-i18n="formacao.heading">Formação</span></h3>
         <div class="row">
           <div class="col-6 g-mb-30">
             <div class="u-shadow-v21 g-bg-white g-brd-around g-brd-gray-light-v4 g-rounded-5 h-100" style="position:relative; padding:clamp(14px, 4vw, 30px);">
@@ -254,8 +258,8 @@
               <div class="formacao-card-grid">
                 <img src="assets/img/custom/logos/ufscar.webp" alt="UFSCar" class="formacao-logo">
                 <div>
-                  <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10">Pós-graduação</div>
-                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Desenvolvimento de Software para Web</p>
+                  <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10" data-i18n="formacao.ufscar.degree">Pós-graduação</div>
+                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="formacao.ufscar.desc">Desenvolvimento de Software para Web</p>
                 </div>
               </div>
             </div>
@@ -267,15 +271,15 @@
               <div class="formacao-card-grid">
                 <img src="assets/img/custom/logos/ifsp.webp" alt="IFSP" class="formacao-logo">
                 <div>
-                  <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10">Curso Superior</div>
-                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Análise e Desenvolvimento de Sistemas</p>
+                  <div class="g-font-size-13 g-color-primary g-font-weight-600 g-mb-10" data-i18n="formacao.ifsp.degree">Curso Superior</div>
+                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="formacao.ifsp.desc">Análise e Desenvolvimento de Sistemas</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-12">
-            <p class="g-font-size-12 g-color-gray-dark-v4 mb-0">Base técnica: Técnico em Informática e Técnico em Informática para Internet — ETEC Paulino Botelho (2011–2012)</p>
+            <p class="g-font-size-12 g-color-gray-dark-v4 mb-0" data-i18n="formacao.etec">Base técnica: Técnico em Informática e Técnico em Informática para Internet — ETEC Paulino Botelho (2011–2012)</p>
           </div>
         </div>
       </section>
@@ -283,7 +287,7 @@
 
       <!-- Projetos em Destaque -->
       <section id="projetos" class="container g-pt-50 g-pb-30">
-        <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-30"><i class="fa fa-star g-color-primary g-pr-8"></i> Projetos em Destaque</h3>
+        <h3 class="h5 g-color-black g-font-weight-600 text-uppercase g-mb-30"><i class="fa fa-star g-color-primary g-pr-8"></i> <span data-i18n="projetos.heading">Projetos em Destaque</span></h3>
         <div class="showcase-wrap g-mb-30">
           <div class="showcase-track" id="projShowcase">
             <div class="showcase-card">
@@ -292,9 +296,9 @@
                   <img style="max-width:100%; max-height:100%; object-fit:contain; display:block;" src="assets/img/custom/mythimon.webp" alt="Mythimon — RPG monster-tamer">
                 </a>
                 <div class="g-pa-30">
-                  <h4 class="h6 g-mb-10">Mythimon <span class="g-color-gray-dark-v4 g-font-weight-400">– Game feito em Angular</span></h4>
-                  <p class="g-font-size-13 g-color-gray-dark-v4">RPG monster-tamer com engine de jogo feita por mim em Angular (modo offline) e backend em Go pro modo competitivo online, incluindo módulo de pagamentos.</p>
-                  <a href="https://mythimon.com" target="_blank" rel="noopener" class="u-btn-outline-primary g-brd-primary g-rounded-50 g-py-8 g-px-20 g-font-size-13"><i class="fa fa-external-link g-pr-4"></i> Visitar site</a>
+                  <h4 class="h6 g-mb-10">Mythimon <span class="g-color-gray-dark-v4 g-font-weight-400" data-i18n="projetos.mythimon.subtitle">– Game feito em Angular</span></h4>
+                  <p class="g-font-size-13 g-color-gray-dark-v4" data-i18n="projetos.mythimon.desc">RPG monster-tamer com engine de jogo feita por mim em Angular (modo offline) e backend em Go pro modo competitivo online, incluindo módulo de pagamentos.</p>
+                  <a href="https://mythimon.com" target="_blank" rel="noopener" class="u-btn-outline-primary g-brd-primary g-rounded-50 g-py-8 g-px-20 g-font-size-13"><i class="fa fa-external-link g-pr-4"></i> <span data-i18n="projetos.visitSite">Visitar site</span></a>
                 </div>
               </div>
             </div>
@@ -305,9 +309,9 @@
                   <img style="max-width:100%; max-height:100%; object-fit:contain; display:block;" src="assets/img/custom/truco.webp" alt="Truco Torneios — mesa de jogo multiplayer">
                 </a>
                 <div class="g-pa-30">
-                  <h4 class="h6 g-mb-10">Truco Torneios <span class="g-color-gray-dark-v4 g-font-weight-400">– Jogo online 2x2</span></h4>
-                  <p class="g-font-size-13 g-color-gray-dark-v4">Plataforma multiplayer de truco — front em Svelte, backend em Go com WebSocket. IA própria (Monte Carlo, minimax e card-counting) simula oponentes reais.</p>
-                  <a href="https://trucotorneios.com" target="_blank" rel="noopener" class="u-btn-outline-primary g-brd-primary g-rounded-50 g-py-8 g-px-20 g-font-size-13"><i class="fa fa-external-link g-pr-4"></i> Visitar site</a>
+                  <h4 class="h6 g-mb-10">Truco Torneios <span class="g-color-gray-dark-v4 g-font-weight-400" data-i18n="projetos.truco.subtitle">– Jogo online 2x2</span></h4>
+                  <p class="g-font-size-13 g-color-gray-dark-v4" data-i18n="projetos.truco.desc">Plataforma multiplayer de truco — front em Svelte, backend em Go com WebSocket. IA própria (Monte Carlo, minimax e card-counting) simula oponentes reais.</p>
+                  <a href="https://trucotorneios.com" target="_blank" rel="noopener" class="u-btn-outline-primary g-brd-primary g-rounded-50 g-py-8 g-px-20 g-font-size-13"><i class="fa fa-external-link g-pr-4"></i> <span data-i18n="projetos.visitSite">Visitar site</span></a>
                 </div>
               </div>
             </div>
@@ -318,8 +322,8 @@
                   <img style="max-width:100%; max-height:100%; object-fit:contain; display:block;" src="assets/img/custom/topbrain.webp" alt="topbrain — painel da Torre de Agentes">
                 </div>
                 <div class="g-pa-30">
-                  <h4 class="h6 g-mb-10">topbrain <span class="g-color-gray-dark-v4 g-font-weight-400">– Orquestração de agentes de IA</span></h4>
-                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0">Sistema de orquestração de agentes de IA sobre múltiplos repositórios, construído com Claude Code. Cada repositório tem um subagente especializado (vendas, finanças, backend, publicação de apps etc.), coordenados por um repositório-sede que mantém contexto cruzado entre eles sem reprocessar tudo do zero a cada tarefa.</p>
+                  <h4 class="h6 g-mb-10">topbrain <span class="g-color-gray-dark-v4 g-font-weight-400" data-i18n="projetos.topbrain.subtitle">– Orquestração de agentes de IA</span></h4>
+                  <p class="g-font-size-13 g-color-gray-dark-v4 mb-0" data-i18n="projetos.topbrain.desc">Sistema de orquestração de agentes de IA sobre múltiplos repositórios, construído com Claude Code. Cada repositório tem um subagente especializado (vendas, finanças, backend, publicação de apps etc.), coordenados por um repositório-sede que mantém contexto cruzado entre eles sem reprocessar tudo do zero a cada tarefa.</p>
                 </div>
               </div>
             </div>
@@ -1964,13 +1968,13 @@
             </div>
 
             <div class="col-sm-4 col-lg-4 g-mb-30">
-              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Contato</h3>
+              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4" data-i18n="footer.contato">Contato</h3>
 
               <!-- Links -->
               <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13">
                 <li class="media mb-4">
                   <i class="d-flex mt-1 mr-3 icon-hotel-restaurant-235 u-line-icon-pro"></i>
-                  <div class="media-body">
+                  <div class="media-body" data-i18n="footer.location">
                     São Carlos – SP, Brasil
                   </div>
                 </li>
@@ -1991,7 +1995,7 @@
             </div>
 
             <div class="col-sm-4 col-lg-4 g-mb-30">
-              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4">Follow Us</h3>
+              <h3 class="h6 g-color-black g-font-weight-600 text-uppercase mb-4" data-i18n="footer.followUs">Redes</h3>
 
               <!-- Links -->
               <ul class="list-unstyled g-color-gray-dark-v4 g-font-size-13">
@@ -2007,7 +2011,7 @@
 
       <!-- Footer Copyright -->
       <div class="container text-center g-py-30">
-        <p class="g-color-gray-dark-v4 g-font-size-13 mb-0">© <span id="ano-atual">2026</span> Felipe Jorge Sales da Silva. Todos os direitos reservados.</p>
+        <p class="g-color-gray-dark-v4 g-font-size-13 mb-0">© <span id="ano-atual">2026</span> Felipe Jorge Sales da Silva. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
       </div>
       <!-- End Footer Copyright -->
     </main>
@@ -2342,6 +2346,120 @@
 
       initCarousel('.marquee-wrap', 'expMarquee');
       initCarousel('.showcase-wrap', 'projShowcase');
+    })();
+    </script>
+
+    <!-- i18n — troca PT/EN sem build, só troca texto/atributos marcados com data-i18n -->
+    <script>
+    (function () {
+      var dict = {
+        pt: {
+          'meta.title': 'Felipe Jorge Sales da Silva — Senior FullStack Engineer',
+          'meta.description': 'Felipe Jorge Sales da Silva — Senior FullStack Engineer: Angular, React, TypeScript, Java, Spring Boot, sistemas bancários e automação com IA (Claude Code, Cursor). Portfólio, experiência e contato.',
+          'nav.sobre': 'Sobre',
+          'nav.experiencia': 'Experiência',
+          'nav.projetos': 'Projetos',
+          'nav.contato': 'Contato',
+          'hero.years': 'anos construindo sistemas',
+          'exp.santander.role': 'Dev Full Stack Sênior',
+          'exp.santander.desc': 'Sistemas bancários críticos — Internet Banking, Pix, cartões. Criou vários microsserviços do zero e foi um dos responsáveis pela arquitetura da nova home do Internet Banking. Ajudou a implantar revisão de código entre desenvolvedores e um fluxo de trabalho em equipe com Git (Gitflow), além de disseminar boas práticas de performance, como carregamento sob demanda (lazy loading).',
+          'exp.monitora.role': 'Dev Full Stack',
+          'exp.monitora.desc': 'Alocado nos clientes VistaJet (equipe internacional) e Bradesco. Monitora foi posteriormente adquirida pela Marlabs.',
+          'exp.early.title': 'Início de carreira',
+          'exp.early.desc': 'Trabalhando em diversas agências de publicidade, criando websites, blogs, sistemas, aplicativos e e-commerce — ritmo intenso na Xtech, média de 2 sites novos por semana. Boa parte dos projetos abaixo vem desse período.',
+          'bubbles.aria': 'Tecnologias: Angular, React, TypeScript, Go, Svelte 5, MySQL, Oracle, Firestore, Microsserviços, GraphQL, Spring Boot, Docker, Java, Claude Code, CI/CD, Cloudflare, PWA, Google Cloud, Testes Automatizados, Micro Frontends',
+          'formacao.heading': 'Formação',
+          'formacao.ufscar.degree': 'Pós-graduação',
+          'formacao.ufscar.desc': 'Desenvolvimento de Software para Web',
+          'formacao.ifsp.degree': 'Curso Superior',
+          'formacao.ifsp.desc': 'Análise e Desenvolvimento de Sistemas',
+          'formacao.etec': 'Base técnica: Técnico em Informática e Técnico em Informática para Internet — ETEC Paulino Botelho (2011–2012)',
+          'projetos.heading': 'Projetos em Destaque',
+          'projetos.mythimon.subtitle': '– Game feito em Angular',
+          'projetos.mythimon.desc': 'RPG monster-tamer com engine de jogo feita por mim em Angular (modo offline) e backend em Go pro modo competitivo online, incluindo módulo de pagamentos.',
+          'projetos.truco.subtitle': '– Jogo online 2x2',
+          'projetos.truco.desc': 'Plataforma multiplayer de truco — front em Svelte, backend em Go com WebSocket. IA própria (Monte Carlo, minimax e card-counting) simula oponentes reais.',
+          'projetos.topbrain.subtitle': '– Orquestração de agentes de IA',
+          'projetos.topbrain.desc': 'Sistema de orquestração de agentes de IA sobre múltiplos repositórios, construído com Claude Code. Cada repositório tem um subagente especializado (vendas, finanças, backend, publicação de apps etc.), coordenados por um repositório-sede que mantém contexto cruzado entre eles sem reprocessar tudo do zero a cada tarefa.',
+          'projetos.visitSite': 'Visitar site',
+          'footer.contato': 'Contato',
+          'footer.followUs': 'Redes',
+          'footer.location': 'São Carlos – SP, Brasil',
+          'footer.rights': 'Todos os direitos reservados.'
+        },
+        en: {
+          'meta.title': 'Felipe Jorge Sales da Silva — Senior FullStack Engineer',
+          'meta.description': 'Felipe Jorge Sales da Silva — Senior FullStack Engineer: Angular, React, TypeScript, Java, Spring Boot, banking systems and AI automation (Claude Code, Cursor). Portfolio, experience and contact.',
+          'nav.sobre': 'About',
+          'nav.experiencia': 'Experience',
+          'nav.projetos': 'Projects',
+          'nav.contato': 'Contact',
+          'hero.years': 'years building systems',
+          'exp.santander.role': 'Senior Full Stack Developer',
+          'exp.santander.desc': 'Critical banking systems — Internet Banking, Pix, cards. Built several microservices from scratch and was one of the architects behind the new Internet Banking home page. Helped roll out code review between developers and a team Git workflow (Gitflow), and spread performance best practices such as lazy loading.',
+          'exp.monitora.role': 'Full Stack Developer',
+          'exp.monitora.desc': 'Assigned to clients VistaJet (international team) and Bradesco. Monitora was later acquired by Marlabs.',
+          'exp.early.title': 'Early career',
+          'exp.early.desc': 'Worked across several advertising agencies, building websites, blogs, systems, apps and e-commerce — intense pace at Xtech, averaging 2 new sites a week. Much of the work below comes from this period.',
+          'bubbles.aria': 'Technologies: Angular, React, TypeScript, Go, Svelte 5, MySQL, Oracle, Firestore, Microservices, GraphQL, Spring Boot, Docker, Java, Claude Code, CI/CD, Cloudflare, PWA, Google Cloud, Automated Testing, Micro Frontends',
+          'formacao.heading': 'Education',
+          'formacao.ufscar.degree': 'Postgraduate',
+          'formacao.ufscar.desc': 'Web Software Development',
+          'formacao.ifsp.degree': 'Technology Degree',
+          'formacao.ifsp.desc': 'Systems Analysis and Development',
+          'formacao.etec': 'Technical background: IT Technician and Internet IT Technician — ETEC Paulino Botelho (2011–2012)',
+          'projetos.heading': 'Featured Projects',
+          'projetos.mythimon.subtitle': '– Game built in Angular',
+          'projetos.mythimon.desc': 'Monster-tamer RPG with a game engine I built in Angular (offline mode) and a Go backend for the online competitive mode, including a payments module.',
+          'projetos.truco.subtitle': '– Online 2x2 game',
+          'projetos.truco.desc': 'Multiplayer truco (Brazilian card game) platform — Svelte frontend, Go backend with WebSocket. Custom AI (Monte Carlo, minimax and card-counting) simulates real opponents.',
+          'projetos.topbrain.subtitle': '– AI agent orchestration',
+          'projetos.topbrain.desc': 'AI agent orchestration system across multiple repositories, built with Claude Code. Each repository has a specialized subagent (sales, finance, backend, app publishing, etc.), coordinated by a hub repository that keeps cross-repo context without reprocessing everything from scratch each time.',
+          'projetos.visitSite': 'Visit site',
+          'footer.contato': 'Contact',
+          'footer.followUs': 'Follow Us',
+          'footer.location': 'São Carlos – SP, Brazil',
+          'footer.rights': 'All rights reserved.'
+        }
+      };
+
+      var toggle = document.getElementById('langToggle');
+      var metaDescription = document.getElementById('metaDescription');
+
+      function apply(lang) {
+        var t = dict[lang] || dict.pt;
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (t[key] !== undefined) el.textContent = t[key];
+        });
+
+        document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
+          el.getAttribute('data-i18n-attr').split(';').forEach(function (pair) {
+            var parts = pair.split(':');
+            var attr = parts[0], key = parts[1];
+            if (attr && key && t[key] !== undefined) el.setAttribute(attr, t[key]);
+          });
+        });
+
+        document.title = t['meta.title'];
+        if (metaDescription) metaDescription.setAttribute('content', t['meta.description']);
+        document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+        if (toggle) toggle.textContent = lang === 'en' ? 'PT' : 'EN';
+
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+      }
+
+      var saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      apply(saved === 'en' ? 'en' : 'pt');
+
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var current = document.documentElement.lang === 'en' ? 'en' : 'pt';
+          apply(current === 'en' ? 'pt' : 'en');
+        });
+      }
     })();
     </script>
   </body>
