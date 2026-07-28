@@ -3,3 +3,249 @@
 .cbp .cbp-item {
     padding: 10px;
 }
+
+/* Evita que o cabeçalho fixo (sticky-top) cubra o topo da seção ao clicar
+   num link do menu — sem isso o texto some atrás da barra semi-transparente. */
+#sobre, #experiencia, #formacao, #projetos, #contato {
+    scroll-margin-top: 100px;
+}
+
+/* Bolhas flutuantes de tecnologias — física simples em JS puro, sem lib externa */
+.bubbles-field {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    overflow: hidden; /* nunca deixa icone+texto vazar pra fora do circulo */
+    will-change: transform;
+    cursor: default;
+}
+.bubble-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+}
+.bubble i {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.bubble span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.15;
+    word-break: break-word;
+}
+@media (max-width: 575px) {
+    .bubble i { font-size: 13px; }
+    .bubble span { font-size: 8.5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .bubble { transition: none; }
+}
+
+/* Mobile: a fileira de bolhas roda com uma única animação de translateX no
+   contêiner — igual ao carrossel de Experiência, que já roda liso. Layout
+   normal em flexbox garante o espaçamento entre elas (nada de física em JS
+   nem colisão calculada por frame, que era o que travava). */
+.bubble-lane-wrap {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+.bubble-lane-track {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: max-content;
+    padding: 10px 2px; /* espaço pro balanço vertical não cortar no overflow do wrap */
+    animation: bubble-lane-scroll 24s linear infinite;
+}
+.bubble-lane-track .bubble {
+    position: relative;
+    top: auto;
+    left: auto;
+    flex: 0 0 auto;
+    animation: bubble-bob-down 1.6s ease-in-out infinite;
+}
+.bubble-lane-track .bubble:nth-child(even) {
+    animation-name: bubble-bob-up;
+}
+@keyframes bubble-lane-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+@keyframes bubble-bob-down {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(7px); }
+}
+@keyframes bubble-bob-up {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-7px); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .bubble-lane-track { animation: none; }
+    .bubble-lane-track .bubble { animation: none; }
+}
+
+/* Logo de empresa nos cards de Experiência — quadrado padronizado, mesmo
+   tamanho pra todas, com a imagem inteira visível (object-fit: contain). */
+.logo-chip {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    border-radius: 8px;
+    background: #f5f5f7;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo-chip img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
+}
+.logo-chip--sm {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cards de Formação: no mobile o card já é estreito (2 colunas), então o
+   logo fica em cima (largura cheia) e o texto embaixo — lado a lado ali
+   deixava o logo minúsculo. A partir de ~576px vira 1fr 1fr normal. */
+.formacao-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.formacao-card-grid img {
+    justify-self: center;
+}
+.formacao-logo {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 130px;
+    object-fit: contain;
+}
+@media (min-width: 576px) {
+    .formacao-card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .formacao-card-grid img {
+        justify-self: stretch;
+    }
+    .formacao-logo {
+        max-height: 100px;
+    }
+}
+
+/* Carrossel de Experiência — scroll nativo do navegador (scroll-snap): o
+   arraste com o dedo/mouse é o próprio navegador quem faz, de graça, sem
+   nenhuma física em JS. Um setInterval simples só empurra pro próximo card
+   de tempos em tempos, e pausa assim que a pessoa toca pra arrastar. */
+.marquee-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+}
+.marquee-wrap::-webkit-scrollbar {
+    display: none;
+}
+.marquee-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    padding-top: 14px; /* espaço pro badge "X anos", que sobe -10px acima do card */
+}
+.marquee-card {
+    flex: 0 0 300px;
+    width: 300px;
+    scroll-snap-align: start;
+}
+/* No desktop os 3 cards cabem numa linha só (940px) — nada pra rolar, então
+   vira uma fileira estática normal, sem máscara de borda nem auto-scroll. */
+@media (min-width: 768px) {
+    .marquee-wrap {
+        overflow: visible;
+        -webkit-mask-image: none;
+                mask-image: none;
+    }
+}
+/* Abaixo de 768px o carrossel rola de verdade — o card atual fica centralizado
+   (não grudado na borda esquerda). Precisa de padding nas pontas do trilho
+   pra dar espaço de sobra e o primeiro/último card também conseguirem chegar
+   ao centro. */
+@media (max-width: 767px) {
+    .marquee-wrap { scroll-snap-type: x mandatory; }
+    .marquee-card { scroll-snap-align: center; }
+    .marquee-track { padding-left: calc(50% - 150px); padding-right: calc(50% - 150px); }
+}
+@media (max-width: 575px) {
+    .marquee-card { flex: 0 0 240px; width: 240px; }
+    .marquee-track { gap: 14px; padding-left: calc(50% - 120px); padding-right: calc(50% - 120px); }
+}
+
+/* Projetos em Destaque — mesmo padrão de carrossel do Experience no mobile
+   (scroll nativo, card centralizado); no desktop volta a ser grid estático
+   (2 colunas + o card "topbrain" ocupando a linha inteira). */
+.showcase-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.showcase-wrap::-webkit-scrollbar {
+    display: none;
+}
+.showcase-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+.showcase-card {
+    flex: 0 0 300px;
+    width: 300px;
+}
+@media (max-width: 767px) {
+    .showcase-wrap { scroll-snap-type: x mandatory; }
+    .showcase-card { scroll-snap-align: center; }
+    .showcase-track { padding-left: calc(50% - 150px); padding-right: calc(50% - 150px); }
+}
+@media (max-width: 575px) {
+    .showcase-card { flex: 0 0 260px; width: 260px; }
+    .showcase-track { gap: 14px; padding-left: calc(50% - 130px); padding-right: calc(50% - 130px); }
+}
+@media (min-width: 768px) {
+    .showcase-wrap { overflow: visible; }
+    .showcase-track { flex-wrap: wrap; width: auto; padding: 0; }
+    .showcase-card { flex: 0 0 calc(50% - 10px); width: auto; }
+    .showcase-card--wide { flex: 0 0 100%; width: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .marquee-wrap { scroll-snap-type: none; }
+}
