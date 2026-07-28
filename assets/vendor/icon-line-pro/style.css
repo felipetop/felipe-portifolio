@@ -1,0 +1,2480 @@
+@charset "UTF-8";
+
+/* Comunnication */
+@font-face {
+	font-family: "communication-48-x-48";
+	src:url("communication/webfont/fonts/communication-48-x-48.eot");
+	src:url("communication/webfont/fonts/communication-48-x-48.eot?#iefix") format("embedded-opentype"),
+	url("communication/webfont/fonts/communication-48-x-48.woff") format("woff"),
+	url("communication/webfont/fonts/communication-48-x-48.ttf") format("truetype"),
+	url("communication/webfont/fonts/communication-48-x-48.svg#communication-48-x-48") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon-communication]:before {
+	font-family: "communication-48-x-48" !important;
+	content: attr(data-icon-communication);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+[class^="icon-communication"]:before,
+[class*=" icon-communication"]:before {
+	font-family: "communication-48-x-48" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-communication-001:before {
+	content: "a";
+}
+.icon-communication-002:before {
+	content: "b";
+}
+.icon-communication-003:before {
+	content: "c";
+}
+.icon-communication-004:before {
+	content: "d";
+}
+.icon-communication-005:before {
+	content: "e";
+}
+.icon-communication-006:before {
+	content: "f";
+}
+.icon-communication-008:before {
+	content: "g";
+}
+.icon-communication-007:before {
+	content: "h";
+}
+.icon-communication-009:before {
+	content: "i";
+}
+.icon-communication-010:before {
+	content: "j";
+}
+.icon-communication-011:before {
+	content: "k";
+}
+.icon-communication-012:before {
+	content: "l";
+}
+.icon-communication-013:before {
+	content: "m";
+}
+.icon-communication-026:before {
+	content: "n";
+}
+.icon-communication-025:before {
+	content: "o";
+}
+.icon-communication-024:before {
+	content: "p";
+}
+.icon-communication-023:before {
+	content: "q";
+}
+.icon-communication-022:before {
+	content: "r";
+}
+.icon-communication-020:before {
+	content: "s";
+}
+.icon-communication-019:before {
+	content: "t";
+}
+.icon-communication-018:before {
+	content: "u";
+}
+.icon-communication-016:before {
+	content: "v";
+}
+.icon-communication-015:before {
+	content: "w";
+}
+.icon-communication-014:before {
+	content: "x";
+}
+.icon-communication-021:before {
+	content: "y";
+}
+.icon-communication-017:before {
+	content: "z";
+}
+.icon-communication-027:before {
+	content: "A";
+}
+.icon-communication-040:before {
+	content: "B";
+}
+.icon-communication-053:before {
+	content: "C";
+}
+.icon-communication-054:before {
+	content: "D";
+}
+.icon-communication-041:before {
+	content: "E";
+}
+.icon-communication-028:before {
+	content: "F";
+}
+.icon-communication-029:before {
+	content: "G";
+}
+.icon-communication-042:before {
+	content: "H";
+}
+.icon-communication-055:before {
+	content: "I";
+}
+.icon-communication-056:before {
+	content: "J";
+}
+.icon-communication-043:before {
+	content: "K";
+}
+.icon-communication-030:before {
+	content: "L";
+}
+.icon-communication-031:before {
+	content: "M";
+}
+.icon-communication-044:before {
+	content: "N";
+}
+.icon-communication-057:before {
+	content: "O";
+}
+.icon-communication-058:before {
+	content: "P";
+}
+.icon-communication-045:before {
+	content: "Q";
+}
+.icon-communication-032:before {
+	content: "R";
+}
+.icon-communication-033:before {
+	content: "S";
+}
+.icon-communication-046:before {
+	content: "T";
+}
+.icon-communication-059:before {
+	content: "U";
+}
+.icon-communication-060:before {
+	content: "V";
+}
+.icon-communication-047:before {
+	content: "W";
+}
+.icon-communication-034:before {
+	content: "X";
+}
+.icon-communication-035:before {
+	content: "Y";
+}
+.icon-communication-048:before {
+	content: "Z";
+}
+.icon-communication-061:before {
+	content: "0";
+}
+.icon-communication-062:before {
+	content: "1";
+}
+.icon-communication-049:before {
+	content: "2";
+}
+.icon-communication-036:before {
+	content: "3";
+}
+.icon-communication-037:before {
+	content: "4";
+}
+.icon-communication-050:before {
+	content: "5";
+}
+.icon-communication-063:before {
+	content: "6";
+}
+.icon-communication-064:before {
+	content: "7";
+}
+.icon-communication-051:before {
+	content: "8";
+}
+.icon-communication-038:before {
+	content: "9";
+}
+.icon-communication-039:before {
+	content: "!";
+}
+.icon-communication-052:before {
+	content: "\"";
+}
+.icon-communication-065:before {
+	content: "#";
+}
+.icon-communication-066:before {
+	content: "$";
+}
+.icon-communication-079:before {
+	content: "%";
+}
+.icon-communication-092:before {
+	content: "&";
+}
+.icon-communication-105:before {
+	content: "'";
+}
+.icon-communication-106:before {
+	content: "(";
+}
+.icon-communication-093:before {
+	content: ")";
+}
+.icon-communication-080:before {
+	content: "*";
+}
+.icon-communication-067:before {
+	content: "+";
+}
+.icon-communication-068:before {
+	content: ",";
+}
+.icon-communication-081:before {
+	content: "-";
+}
+.icon-communication-082:before {
+	content: ".";
+}
+.icon-communication-069:before {
+	content: "/";
+}
+.icon-communication-070:before {
+	content: ":";
+}
+.icon-communication-083:before {
+	content: ";";
+}
+.icon-communication-084:before {
+	content: "<";
+}
+.icon-communication-071:before {
+	content: "=";
+}
+.icon-communication-072:before {
+	content: ">";
+}
+.icon-communication-085:before {
+	content: "?";
+}
+.icon-communication-086:before {
+	content: "@";
+}
+.icon-communication-073:before {
+	content: "[";
+}
+.icon-communication-074:before {
+	content: "]";
+}
+.icon-communication-087:before {
+	content: "^";
+}
+.icon-communication-088:before {
+	content: "_";
+}
+.icon-communication-075:before {
+	content: "`";
+}
+.icon-communication-076:before {
+	content: "{";
+}
+.icon-communication-089:before {
+	content: "|";
+}
+.icon-communication-090:before {
+	content: "}";
+}
+.icon-communication-077:before {
+	content: "~";
+}
+.icon-communication-078:before {
+	content: "\\";
+}
+.icon-communication-091:before {
+	content: "\e000";
+}
+.icon-communication-104:before {
+	content: "\e001";
+}
+.icon-communication-117:before {
+	content: "\e002";
+}
+.icon-communication-116:before {
+	content: "\e003";
+}
+.icon-communication-103:before {
+	content: "\e004";
+}
+.icon-communication-102:before {
+	content: "\e005";
+}
+.icon-communication-115:before {
+	content: "\e006";
+}
+.icon-communication-114:before {
+	content: "\e007";
+}
+.icon-communication-101:before {
+	content: "\e008";
+}
+.icon-communication-100:before {
+	content: "\e009";
+}
+.icon-communication-113:before {
+	content: "\e00a";
+}
+.icon-communication-112:before {
+	content: "\e00b";
+}
+.icon-communication-099:before {
+	content: "\e00c";
+}
+.icon-communication-098:before {
+	content: "\e00d";
+}
+.icon-communication-111:before {
+	content: "\e00e";
+}
+.icon-communication-110:before {
+	content: "\e00f";
+}
+.icon-communication-097:before {
+	content: "\e010";
+}
+.icon-communication-096:before {
+	content: "\e011";
+}
+.icon-communication-109:before {
+	content: "\e012";
+}
+.icon-communication-108:before {
+	content: "\e013";
+}
+.icon-communication-095:before {
+	content: "\e014";
+}
+.icon-communication-094:before {
+	content: "\e015";
+}
+.icon-communication-107:before {
+	content: "\e016";
+}
+.icon-communication-118:before {
+	content: "\e017";
+}
+.icon-communication-131:before {
+	content: "\e018";
+}
+.icon-communication-144:before {
+	content: "\e019";
+}
+.icon-communication-157:before {
+	content: "\e01a";
+}
+.icon-communication-170:before {
+	content: "\e01b";
+}
+.icon-communication-171:before {
+	content: "\e01c";
+}
+.icon-communication-158:before {
+	content: "\e01d";
+}
+.icon-communication-145:before {
+	content: "\e01e";
+}
+.icon-communication-132:before {
+	content: "\e01f";
+}
+.icon-communication-119:before {
+	content: "\e020";
+}
+.icon-communication-120:before {
+	content: "\e021";
+}
+.icon-communication-133:before {
+	content: "\e022";
+}
+.icon-communication-146:before {
+	content: "\e023";
+}
+.icon-communication-159:before {
+	content: "\e024";
+}
+.icon-communication-172:before {
+	content: "\e025";
+}
+.icon-communication-173:before {
+	content: "\e026";
+}
+.icon-communication-160:before {
+	content: "\e027";
+}
+.icon-communication-147:before {
+	content: "\e028";
+}
+.icon-communication-134:before {
+	content: "\e029";
+}
+.icon-communication-121:before {
+	content: "\e02a";
+}
+.icon-communication-122:before {
+	content: "\e02b";
+}
+.icon-communication-135:before {
+	content: "\e02c";
+}
+.icon-communication-148:before {
+	content: "\e02d";
+}
+.icon-communication-161:before {
+	content: "\e02e";
+}
+.icon-communication-174:before {
+	content: "\e02f";
+}
+.icon-communication-175:before {
+	content: "\e030";
+}
+.icon-communication-162:before {
+	content: "\e031";
+}
+.icon-communication-149:before {
+	content: "\e032";
+}
+.icon-communication-136:before {
+	content: "\e033";
+}
+.icon-communication-123:before {
+	content: "\e034";
+}
+.icon-communication-124:before {
+	content: "\e035";
+}
+.icon-communication-137:before {
+	content: "\e036";
+}
+.icon-communication-150:before {
+	content: "\e037";
+}
+.icon-communication-163:before {
+	content: "\e038";
+}
+.icon-communication-176:before {
+	content: "\e039";
+}
+.icon-communication-177:before {
+	content: "\e03a";
+}
+.icon-communication-164:before {
+	content: "\e03b";
+}
+.icon-communication-151:before {
+	content: "\e03c";
+}
+.icon-communication-138:before {
+	content: "\e03d";
+}
+.icon-communication-125:before {
+	content: "\e03e";
+}
+.icon-communication-126:before {
+	content: "\e03f";
+}
+.icon-communication-139:before {
+	content: "\e040";
+}
+.icon-communication-152:before {
+	content: "\e041";
+}
+.icon-communication-165:before {
+	content: "\e042";
+}
+.icon-communication-178:before {
+	content: "\e043";
+}
+.icon-communication-179:before {
+	content: "\e044";
+}
+.icon-communication-166:before {
+	content: "\e045";
+}
+.icon-communication-153:before {
+	content: "\e046";
+}
+.icon-communication-140:before {
+	content: "\e047";
+}
+.icon-communication-127:before {
+	content: "\e048";
+}
+.icon-communication-128:before {
+	content: "\e049";
+}
+.icon-communication-141:before {
+	content: "\e04a";
+}
+.icon-communication-154:before {
+	content: "\e04b";
+}
+.icon-communication-167:before {
+	content: "\e04c";
+}
+.icon-communication-180:before {
+	content: "\e04d";
+}
+.icon-communication-168:before {
+	content: "\e04e";
+}
+.icon-communication-169:before {
+	content: "\e04f";
+}
+.icon-communication-156:before {
+	content: "\e050";
+}
+.icon-communication-155:before {
+	content: "\e051";
+}
+.icon-communication-142:before {
+	content: "\e052";
+}
+.icon-communication-143:before {
+	content: "\e053";
+}
+.icon-communication-130:before {
+	content: "\e054";
+}
+.icon-communication-129:before {
+	content: "\e055";
+}
+
+/* Furniture */
+@font-face {
+	font-family: "furniture";
+	src:url("furniture/webfont/fonts/furniture.eot");
+	src:url("furniture/webfont/fonts/furniture.eot?#iefix") format("embedded-opentype"),
+	url("furniture/webfont/fonts/furniture.woff") format("woff"),
+    url("furniture/webfont/fonts/furniture.ttf") format("truetype"),
+	url("furniture/webfont/fonts/furniture.svg#furniture") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon-furniture]:before {
+	font-family: "furniture" !important;
+	content: attr(data-icon-furniture);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-furniture"]:before,
+[class*=" icon-furniture"]:before {
+	font-family: "furniture" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-furniture-001:before {
+	content: "a";
+}
+.icon-furniture-014:before {
+	content: "b";
+}
+.icon-furniture-027:before {
+	content: "c";
+}
+.icon-furniture-040:before {
+	content: "d";
+}
+.icon-furniture-041:before {
+	content: "e";
+}
+.icon-furniture-028:before {
+	content: "f";
+}
+.icon-furniture-015:before {
+	content: "g";
+}
+.icon-furniture-002:before {
+	content: "h";
+}
+.icon-furniture-003:before {
+	content: "i";
+}
+.icon-furniture-016:before {
+	content: "j";
+}
+.icon-furniture-029:before {
+	content: "k";
+}
+.icon-furniture-042:before {
+	content: "l";
+}
+.icon-furniture-043:before {
+	content: "m";
+}
+.icon-furniture-030:before {
+	content: "n";
+}
+.icon-furniture-017:before {
+	content: "o";
+}
+.icon-furniture-004:before {
+	content: "p";
+}
+.icon-furniture-005:before {
+	content: "q";
+}
+.icon-furniture-018:before {
+	content: "r";
+}
+.icon-furniture-031:before {
+	content: "s";
+}
+.icon-furniture-044:before {
+	content: "t";
+}
+.icon-furniture-045:before {
+	content: "u";
+}
+.icon-furniture-032:before {
+	content: "v";
+}
+.icon-furniture-019:before {
+	content: "w";
+}
+.icon-furniture-006:before {
+	content: "x";
+}
+.icon-furniture-007:before {
+	content: "y";
+}
+.icon-furniture-020:before {
+	content: "z";
+}
+.icon-furniture-033:before {
+	content: "A";
+}
+.icon-furniture-046:before {
+	content: "B";
+}
+.icon-furniture-047:before {
+	content: "C";
+}
+.icon-furniture-034:before {
+	content: "D";
+}
+.icon-furniture-021:before {
+	content: "E";
+}
+.icon-furniture-008:before {
+	content: "F";
+}
+.icon-furniture-009:before {
+	content: "G";
+}
+.icon-furniture-022:before {
+	content: "H";
+}
+.icon-furniture-035:before {
+	content: "I";
+}
+.icon-furniture-048:before {
+	content: "J";
+}
+.icon-furniture-049:before {
+	content: "K";
+}
+.icon-furniture-036:before {
+	content: "L";
+}
+.icon-furniture-023:before {
+	content: "M";
+}
+.icon-furniture-010:before {
+	content: "N";
+}
+.icon-furniture-011:before {
+	content: "O";
+}
+.icon-furniture-024:before {
+	content: "P";
+}
+.icon-furniture-037:before {
+	content: "Q";
+}
+.icon-furniture-050:before {
+	content: "R";
+}
+.icon-furniture-051:before {
+	content: "S";
+}
+.icon-furniture-038:before {
+	content: "T";
+}
+.icon-furniture-025:before {
+	content: "U";
+}
+.icon-furniture-012:before {
+	content: "V";
+}
+.icon-furniture-013:before {
+	content: "W";
+}
+.icon-furniture-026:before {
+	content: "X";
+}
+.icon-furniture-039:before {
+	content: "Y";
+}
+.icon-furniture-052:before {
+	content: "Z";
+}
+.icon-furniture-065:before {
+	content: "0";
+}
+.icon-furniture-064:before {
+	content: "1";
+}
+.icon-furniture-063:before {
+	content: "2";
+}
+.icon-furniture-062:before {
+	content: "3";
+}
+.icon-furniture-061:before {
+	content: "4";
+}
+.icon-furniture-060:before {
+	content: "5";
+}
+.icon-furniture-059:before {
+	content: "6";
+}
+.icon-furniture-058:before {
+	content: "7";
+}
+.icon-furniture-057:before {
+	content: "8";
+}
+.icon-furniture-056:before {
+	content: "9";
+}
+.icon-furniture-055:before {
+	content: "!";
+}
+.icon-furniture-054:before {
+	content: "\"";
+}
+.icon-furniture-053:before {
+	content: "#";
+}
+.icon-furniture-066:before {
+	content: "$";
+}
+.icon-furniture-079:before {
+	content: "%";
+}
+.icon-furniture-092:before {
+	content: "&";
+}
+.icon-furniture-093:before {
+	content: "'";
+}
+.icon-furniture-080:before {
+	content: "(";
+}
+.icon-furniture-067:before {
+	content: ")";
+}
+.icon-furniture-068:before {
+	content: "*";
+}
+.icon-furniture-081:before {
+	content: "+";
+}
+.icon-furniture-094:before {
+	content: ",";
+}
+.icon-furniture-095:before {
+	content: "-";
+}
+.icon-furniture-082:before {
+	content: ".";
+}
+.icon-furniture-069:before {
+	content: "/";
+}
+.icon-furniture-070:before {
+	content: ":";
+}
+.icon-furniture-083:before {
+	content: ";";
+}
+.icon-furniture-096:before {
+	content: "<";
+}
+.icon-furniture-097:before {
+	content: "=";
+}
+.icon-furniture-084:before {
+	content: ">";
+}
+.icon-furniture-071:before {
+	content: "?";
+}
+.icon-furniture-073:before {
+	content: "@";
+}
+.icon-furniture-072:before {
+	content: "[";
+}
+.icon-furniture-085:before {
+	content: "]";
+}
+.icon-furniture-098:before {
+	content: "^";
+}
+.icon-furniture-099:before {
+	content: "_";
+}
+.icon-furniture-086:before {
+	content: "`";
+}
+.icon-furniture-087:before {
+	content: "{";
+}
+.icon-furniture-100:before {
+	content: "|";
+}
+.icon-furniture-075:before {
+	content: "}";
+}
+.icon-furniture-074:before {
+	content: "~";
+}
+.icon-furniture-076:before {
+	content: "\\";
+}
+.icon-furniture-089:before {
+	content: "\e000";
+}
+.icon-furniture-088:before {
+	content: "\e001";
+}
+.icon-furniture-090:before {
+	content: "\e002";
+}
+.icon-furniture-077:before {
+	content: "\e003";
+}
+.icon-furniture-078:before {
+	content: "\e004";
+}
+.icon-furniture-091:before {
+	content: "\e005";
+}
+
+
+@charset "UTF-8";
+
+@font-face {
+	font-family: "hotel-restaurant";
+	src:url("hotel-restaurant/webfont/fonts/hotel-restaurant.eot");
+	src:url("hotel-restaurant/webfont/fonts/hotel-restaurant.eot?#iefix") format("embedded-opentype"),
+	url("hotel-restaurant/webfont/fonts/hotel-restaurant.woff") format("woff"),
+    url("hotel-restaurant/webfont/fonts/hotel-restaurant.ttf") format("truetype"),
+	url("hotel-restaurant/webfont/fonts/hotel-restaurant.svg#hotel-restaurant") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon-hotel-restaurant]:before {
+	font-family: "hotel-restaurant" !important;
+	content: attr(data-icon-hotel-restaurant);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-hotel-restaurant"]:before,
+[class*=" icon-hotel-restaurant"]:before {
+	font-family: "hotel-restaurant" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hotel-restaurant-001:before {
+	content: "a";
+}
+.icon-hotel-restaurant-002:before {
+	content: "b";
+}
+.icon-hotel-restaurant-003:before {
+	content: "c";
+}
+.icon-hotel-restaurant-004:before {
+	content: "d";
+}
+.icon-hotel-restaurant-005:before {
+	content: "e";
+}
+.icon-hotel-restaurant-006:before {
+	content: "f";
+}
+.icon-hotel-restaurant-007:before {
+	content: "g";
+}
+.icon-hotel-restaurant-008:before {
+	content: "h";
+}
+.icon-hotel-restaurant-009:before {
+	content: "i";
+}
+.icon-hotel-restaurant-010:before {
+	content: "j";
+}
+.icon-hotel-restaurant-011:before {
+	content: "k";
+}
+.icon-hotel-restaurant-065:before {
+	content: "l";
+}
+.icon-hotel-restaurant-012:before {
+	content: "m";
+}
+.icon-hotel-restaurant-013:before {
+	content: "n";
+}
+.icon-hotel-restaurant-026:before {
+	content: "o";
+}
+.icon-hotel-restaurant-025:before {
+	content: "p";
+}
+.icon-hotel-restaurant-024:before {
+	content: "q";
+}
+.icon-hotel-restaurant-023:before {
+	content: "r";
+}
+.icon-hotel-restaurant-022:before {
+	content: "s";
+}
+.icon-hotel-restaurant-021:before {
+	content: "t";
+}
+.icon-hotel-restaurant-020:before {
+	content: "u";
+}
+.icon-hotel-restaurant-019:before {
+	content: "v";
+}
+.icon-hotel-restaurant-018:before {
+	content: "w";
+}
+.icon-hotel-restaurant-017:before {
+	content: "x";
+}
+.icon-hotel-restaurant-016:before {
+	content: "y";
+}
+.icon-hotel-restaurant-015:before {
+	content: "z";
+}
+.icon-hotel-restaurant-014:before {
+	content: "A";
+}
+.icon-hotel-restaurant-027:before {
+	content: "B";
+}
+.icon-hotel-restaurant-028:before {
+	content: "C";
+}
+.icon-hotel-restaurant-029:before {
+	content: "D";
+}
+.icon-hotel-restaurant-030:before {
+	content: "E";
+}
+.icon-hotel-restaurant-031:before {
+	content: "F";
+}
+.icon-hotel-restaurant-032:before {
+	content: "G";
+}
+.icon-hotel-restaurant-033:before {
+	content: "H";
+}
+.icon-hotel-restaurant-034:before {
+	content: "I";
+}
+.icon-hotel-restaurant-035:before {
+	content: "J";
+}
+.icon-hotel-restaurant-036:before {
+	content: "K";
+}
+.icon-hotel-restaurant-038:before {
+	content: "L";
+}
+.icon-hotel-restaurant-039:before {
+	content: "M";
+}
+.icon-hotel-restaurant-037:before {
+	content: "N";
+}
+.icon-hotel-restaurant-052:before {
+	content: "O";
+}
+.icon-hotel-restaurant-051:before {
+	content: "P";
+}
+.icon-hotel-restaurant-050:before {
+	content: "Q";
+}
+.icon-hotel-restaurant-049:before {
+	content: "R";
+}
+.icon-hotel-restaurant-048:before {
+	content: "S";
+}
+.icon-hotel-restaurant-047:before {
+	content: "T";
+}
+.icon-hotel-restaurant-046:before {
+	content: "U";
+}
+.icon-hotel-restaurant-045:before {
+	content: "V";
+}
+.icon-hotel-restaurant-044:before {
+	content: "W";
+}
+.icon-hotel-restaurant-042:before {
+	content: "X";
+}
+.icon-hotel-restaurant-041:before {
+	content: "Y";
+}
+.icon-hotel-restaurant-040:before {
+	content: "Z";
+}
+.icon-hotel-restaurant-043:before {
+	content: "0";
+}
+.icon-hotel-restaurant-053:before {
+	content: "1";
+}
+.icon-hotel-restaurant-054:before {
+	content: "2";
+}
+.icon-hotel-restaurant-055:before {
+	content: "3";
+}
+.icon-hotel-restaurant-056:before {
+	content: "4";
+}
+.icon-hotel-restaurant-057:before {
+	content: "5";
+}
+.icon-hotel-restaurant-058:before {
+	content: "6";
+}
+.icon-hotel-restaurant-059:before {
+	content: "7";
+}
+.icon-hotel-restaurant-060:before {
+	content: "8";
+}
+.icon-hotel-restaurant-061:before {
+	content: "9";
+}
+.icon-hotel-restaurant-062:before {
+	content: "!";
+}
+.icon-hotel-restaurant-063:before {
+	content: "\"";
+}
+.icon-hotel-restaurant-064:before {
+	content: "#";
+}
+.icon-hotel-restaurant-066:before {
+	content: "$";
+}
+.icon-hotel-restaurant-079:before {
+	content: "%";
+}
+.icon-hotel-restaurant-092:before {
+	content: "&";
+}
+.icon-hotel-restaurant-105:before {
+	content: "'";
+}
+.icon-hotel-restaurant-118:before {
+	content: "(";
+}
+.icon-hotel-restaurant-131:before {
+	content: ")";
+}
+.icon-hotel-restaurant-144:before {
+	content: "*";
+}
+.icon-hotel-restaurant-157:before {
+	content: "+";
+}
+.icon-hotel-restaurant-067:before {
+	content: ",";
+}
+.icon-hotel-restaurant-080:before {
+	content: "-";
+}
+.icon-hotel-restaurant-068:before {
+	content: ".";
+}
+.icon-hotel-restaurant-081:before {
+	content: "/";
+}
+.icon-hotel-restaurant-093:before {
+	content: ":";
+}
+.icon-hotel-restaurant-094:before {
+	content: ";";
+}
+.icon-hotel-restaurant-095:before {
+	content: "<";
+}
+.icon-hotel-restaurant-096:before {
+	content: "=";
+}
+.icon-hotel-restaurant-097:before {
+	content: ">";
+}
+.icon-hotel-restaurant-098:before {
+	content: "?";
+}
+.icon-hotel-restaurant-099:before {
+	content: "@";
+}
+.icon-hotel-restaurant-100:before {
+	content: "[";
+}
+.icon-hotel-restaurant-101:before {
+	content: "]";
+}
+.icon-hotel-restaurant-102:before {
+	content: "^";
+}
+.icon-hotel-restaurant-103:before {
+	content: "_";
+}
+.icon-hotel-restaurant-104:before {
+	content: "`";
+}
+.icon-hotel-restaurant-091:before {
+	content: "{";
+}
+.icon-hotel-restaurant-090:before {
+	content: "|";
+}
+.icon-hotel-restaurant-089:before {
+	content: "}";
+}
+.icon-hotel-restaurant-088:before {
+	content: "~";
+}
+.icon-hotel-restaurant-087:before {
+	content: "\\";
+}
+.icon-hotel-restaurant-086:before {
+	content: "\e000";
+}
+.icon-hotel-restaurant-085:before {
+	content: "\e001";
+}
+.icon-hotel-restaurant-084:before {
+	content: "\e002";
+}
+.icon-hotel-restaurant-083:before {
+	content: "\e003";
+}
+.icon-hotel-restaurant-082:before {
+	content: "\e004";
+}
+.icon-hotel-restaurant-069:before {
+	content: "\e005";
+}
+.icon-hotel-restaurant-070:before {
+	content: "\e006";
+}
+.icon-hotel-restaurant-071:before {
+	content: "\e007";
+}
+.icon-hotel-restaurant-072:before {
+	content: "\e008";
+}
+.icon-hotel-restaurant-073:before {
+	content: "\e009";
+}
+.icon-hotel-restaurant-074:before {
+	content: "\e00a";
+}
+.icon-hotel-restaurant-075:before {
+	content: "\e00b";
+}
+.icon-hotel-restaurant-076:before {
+	content: "\e00c";
+}
+.icon-hotel-restaurant-077:before {
+	content: "\e00d";
+}
+.icon-hotel-restaurant-078:before {
+	content: "\e00e";
+}
+.icon-hotel-restaurant-117:before {
+	content: "\e00f";
+}
+.icon-hotel-restaurant-116:before {
+	content: "\e010";
+}
+.icon-hotel-restaurant-115:before {
+	content: "\e011";
+}
+.icon-hotel-restaurant-114:before {
+	content: "\e012";
+}
+.icon-hotel-restaurant-113:before {
+	content: "\e013";
+}
+.icon-hotel-restaurant-112:before {
+	content: "\e014";
+}
+.icon-hotel-restaurant-111:before {
+	content: "\e015";
+}
+.icon-hotel-restaurant-110:before {
+	content: "\e016";
+}
+.icon-hotel-restaurant-109:before {
+	content: "\e017";
+}
+.icon-hotel-restaurant-108:before {
+	content: "\e018";
+}
+.icon-hotel-restaurant-107:before {
+	content: "\e019";
+}
+.icon-hotel-restaurant-106:before {
+	content: "\e01a";
+}
+.icon-hotel-restaurant-119:before {
+	content: "\e01b";
+}
+.icon-hotel-restaurant-120:before {
+	content: "\e01c";
+}
+.icon-hotel-restaurant-121:before {
+	content: "\e01d";
+}
+.icon-hotel-restaurant-122:before {
+	content: "\e01e";
+}
+.icon-hotel-restaurant-123:before {
+	content: "\e01f";
+}
+.icon-hotel-restaurant-124:before {
+	content: "\e020";
+}
+.icon-hotel-restaurant-125:before {
+	content: "\e021";
+}
+.icon-hotel-restaurant-126:before {
+	content: "\e022";
+}
+.icon-hotel-restaurant-127:before {
+	content: "\e023";
+}
+.icon-hotel-restaurant-128:before {
+	content: "\e024";
+}
+.icon-hotel-restaurant-129:before {
+	content: "\e025";
+}
+.icon-hotel-restaurant-130:before {
+	content: "\e026";
+}
+.icon-hotel-restaurant-143:before {
+	content: "\e027";
+}
+.icon-hotel-restaurant-142:before {
+	content: "\e028";
+}
+.icon-hotel-restaurant-141:before {
+	content: "\e029";
+}
+.icon-hotel-restaurant-140:before {
+	content: "\e02a";
+}
+.icon-hotel-restaurant-139:before {
+	content: "\e02b";
+}
+.icon-hotel-restaurant-138:before {
+	content: "\e02c";
+}
+.icon-hotel-restaurant-137:before {
+	content: "\e02d";
+}
+.icon-hotel-restaurant-136:before {
+	content: "\e02e";
+}
+.icon-hotel-restaurant-135:before {
+	content: "\e02f";
+}
+.icon-hotel-restaurant-134:before {
+	content: "\e030";
+}
+.icon-hotel-restaurant-133:before {
+	content: "\e031";
+}
+.icon-hotel-restaurant-132:before {
+	content: "\e032";
+}
+.icon-hotel-restaurant-145:before {
+	content: "\e033";
+}
+.icon-hotel-restaurant-146:before {
+	content: "\e034";
+}
+.icon-hotel-restaurant-147:before {
+	content: "\e035";
+}
+.icon-hotel-restaurant-148:before {
+	content: "\e036";
+}
+.icon-hotel-restaurant-149:before {
+	content: "\e037";
+}
+.icon-hotel-restaurant-150:before {
+	content: "\e038";
+}
+.icon-hotel-restaurant-151:before {
+	content: "\e039";
+}
+.icon-hotel-restaurant-152:before {
+	content: "\e03a";
+}
+.icon-hotel-restaurant-153:before {
+	content: "\e03b";
+}
+.icon-hotel-restaurant-154:before {
+	content: "\e03c";
+}
+.icon-hotel-restaurant-155:before {
+	content: "\e03d";
+}
+.icon-hotel-restaurant-156:before {
+	content: "\e03e";
+}
+.icon-hotel-restaurant-169:before {
+	content: "\e03f";
+}
+.icon-hotel-restaurant-168:before {
+	content: "\e040";
+}
+.icon-hotel-restaurant-167:before {
+	content: "\e041";
+}
+.icon-hotel-restaurant-166:before {
+	content: "\e042";
+}
+.icon-hotel-restaurant-165:before {
+	content: "\e043";
+}
+.icon-hotel-restaurant-164:before {
+	content: "\e044";
+}
+.icon-hotel-restaurant-163:before {
+	content: "\e045";
+}
+.icon-hotel-restaurant-162:before {
+	content: "\e046";
+}
+.icon-hotel-restaurant-161:before {
+	content: "\e047";
+}
+.icon-hotel-restaurant-160:before {
+	content: "\e048";
+}
+.icon-hotel-restaurant-159:before {
+	content: "\e049";
+}
+.icon-hotel-restaurant-158:before {
+	content: "\e04a";
+}
+.icon-hotel-restaurant-170:before {
+	content: "\e04b";
+}
+.icon-hotel-restaurant-171:before {
+	content: "\e04c";
+}
+.icon-hotel-restaurant-172:before {
+	content: "\e04d";
+}
+.icon-hotel-restaurant-173:before {
+	content: "\e04e";
+}
+.icon-hotel-restaurant-174:before {
+	content: "\e04f";
+}
+.icon-hotel-restaurant-175:before {
+	content: "\e050";
+}
+.icon-hotel-restaurant-176:before {
+	content: "\e051";
+}
+.icon-hotel-restaurant-177:before {
+	content: "\e052";
+}
+.icon-hotel-restaurant-178:before {
+	content: "\e053";
+}
+.icon-hotel-restaurant-179:before {
+	content: "\e054";
+}
+.icon-hotel-restaurant-180:before {
+	content: "\e055";
+}
+.icon-hotel-restaurant-181:before {
+	content: "\e056";
+}
+.icon-hotel-restaurant-182:before {
+	content: "\e057";
+}
+.icon-hotel-restaurant-195:before {
+	content: "\e058";
+}
+.icon-hotel-restaurant-194:before {
+	content: "\e059";
+}
+.icon-hotel-restaurant-193:before {
+	content: "\e05a";
+}
+.icon-hotel-restaurant-192:before {
+	content: "\e05b";
+}
+.icon-hotel-restaurant-191:before {
+	content: "\e05c";
+}
+.icon-hotel-restaurant-190:before {
+	content: "\e05d";
+}
+.icon-hotel-restaurant-189:before {
+	content: "\e05e";
+}
+.icon-hotel-restaurant-188:before {
+	content: "\e05f";
+}
+.icon-hotel-restaurant-187:before {
+	content: "\e060";
+}
+.icon-hotel-restaurant-186:before {
+	content: "\e061";
+}
+.icon-hotel-restaurant-185:before {
+	content: "\e062";
+}
+.icon-hotel-restaurant-184:before {
+	content: "\e063";
+}
+.icon-hotel-restaurant-183:before {
+	content: "\e064";
+}
+.icon-hotel-restaurant-196:before {
+	content: "\e065";
+}
+.icon-hotel-restaurant-197:before {
+	content: "\e066";
+}
+.icon-hotel-restaurant-198:before {
+	content: "\e067";
+}
+.icon-hotel-restaurant-199:before {
+	content: "\e068";
+}
+.icon-hotel-restaurant-200:before {
+	content: "\e069";
+}
+.icon-hotel-restaurant-201:before {
+	content: "\e06a";
+}
+.icon-hotel-restaurant-202:before {
+	content: "\e06b";
+}
+.icon-hotel-restaurant-203:before {
+	content: "\e06c";
+}
+.icon-hotel-restaurant-204:before {
+	content: "\e06d";
+}
+.icon-hotel-restaurant-205:before {
+	content: "\e06e";
+}
+.icon-hotel-restaurant-206:before {
+	content: "\e06f";
+}
+.icon-hotel-restaurant-207:before {
+	content: "\e070";
+}
+.icon-hotel-restaurant-208:before {
+	content: "\e071";
+}
+.icon-hotel-restaurant-221:before {
+	content: "\e072";
+}
+.icon-hotel-restaurant-220:before {
+	content: "\e073";
+}
+.icon-hotel-restaurant-219:before {
+	content: "\e074";
+}
+.icon-hotel-restaurant-218:before {
+	content: "\e075";
+}
+.icon-hotel-restaurant-217:before {
+	content: "\e076";
+}
+.icon-hotel-restaurant-216:before {
+	content: "\e077";
+}
+.icon-hotel-restaurant-215:before {
+	content: "\e078";
+}
+.icon-hotel-restaurant-214:before {
+	content: "\e079";
+}
+.icon-hotel-restaurant-213:before {
+	content: "\e07a";
+}
+.icon-hotel-restaurant-212:before {
+	content: "\e07b";
+}
+.icon-hotel-restaurant-211:before {
+	content: "\e07c";
+}
+.icon-hotel-restaurant-210:before {
+	content: "\e07d";
+}
+.icon-hotel-restaurant-209:before {
+	content: "\e07e";
+}
+.icon-hotel-restaurant-222:before {
+	content: "\e07f";
+}
+.icon-hotel-restaurant-223:before {
+	content: "\e080";
+}
+.icon-hotel-restaurant-224:before {
+	content: "\e081";
+}
+.icon-hotel-restaurant-225:before {
+	content: "\e082";
+}
+.icon-hotel-restaurant-226:before {
+	content: "\e083";
+}
+.icon-hotel-restaurant-227:before {
+	content: "\e084";
+}
+.icon-hotel-restaurant-228:before {
+	content: "\e085";
+}
+.icon-hotel-restaurant-229:before {
+	content: "\e086";
+}
+.icon-hotel-restaurant-230:before {
+	content: "\e087";
+}
+.icon-hotel-restaurant-231:before {
+	content: "\e088";
+}
+.icon-hotel-restaurant-232:before {
+	content: "\e089";
+}
+.icon-hotel-restaurant-233:before {
+	content: "\e08a";
+}
+.icon-hotel-restaurant-234:before {
+	content: "\e08b";
+}
+.icon-hotel-restaurant-247:before {
+	content: "\e08c";
+}
+.icon-hotel-restaurant-246:before {
+	content: "\e08d";
+}
+.icon-hotel-restaurant-245:before {
+	content: "\e08e";
+}
+.icon-hotel-restaurant-244:before {
+	content: "\e08f";
+}
+.icon-hotel-restaurant-243:before {
+	content: "\e090";
+}
+.icon-hotel-restaurant-242:before {
+	content: "\e091";
+}
+.icon-hotel-restaurant-241:before {
+	content: "\e092";
+}
+.icon-hotel-restaurant-240:before {
+	content: "\e093";
+}
+.icon-hotel-restaurant-239:before {
+	content: "\e094";
+}
+.icon-hotel-restaurant-238:before {
+	content: "\e095";
+}
+.icon-hotel-restaurant-237:before {
+	content: "\e096";
+}
+.icon-hotel-restaurant-236:before {
+	content: "\e097";
+}
+.icon-hotel-restaurant-235:before {
+	content: "\e098";
+}
+.icon-hotel-restaurant-248:before {
+	content: "\e099";
+}
+.icon-hotel-restaurant-249:before {
+	content: "\e09a";
+}
+.icon-hotel-restaurant-250:before {
+	content: "\e09b";
+}
+
+@charset "UTF-8";
+
+@font-face {
+	font-family: "media";
+	src:url("media/webfont/fonts/media.eot");
+	src:url("media/webfont/fonts/media.eot?#iefix") format("embedded-opentype"),
+	url("media/webfont/fonts/media.woff") format("woff"),
+    url("media/webfont/fonts/media.ttf") format("truetype"),
+	url("media/webfont/fonts/media.svg#media") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon-media]:before {
+	font-family: "media" !important;
+	content: attr(data-icon-media);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-media"]:before,
+[class*=" icon-media"]:before {
+	font-family: "media" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-media-001:before {
+	content: "a";
+}
+.icon-media-014:before {
+	content: "b";
+}
+.icon-media-027:before {
+	content: "c";
+}
+.icon-media-040:before {
+	content: "d";
+}
+.icon-media-041:before {
+	content: "e";
+}
+.icon-media-028:before {
+	content: "f";
+}
+.icon-media-015:before {
+	content: "g";
+}
+.icon-media-002:before {
+	content: "h";
+}
+.icon-media-003:before {
+	content: "i";
+}
+.icon-media-016:before {
+	content: "j";
+}
+.icon-media-029:before {
+	content: "k";
+}
+.icon-media-042:before {
+	content: "l";
+}
+.icon-media-043:before {
+	content: "m";
+}
+.icon-media-030:before {
+	content: "n";
+}
+.icon-media-017:before {
+	content: "o";
+}
+.icon-media-004:before {
+	content: "p";
+}
+.icon-media-005:before {
+	content: "q";
+}
+.icon-media-018:before {
+	content: "r";
+}
+.icon-media-031:before {
+	content: "s";
+}
+.icon-media-044:before {
+	content: "t";
+}
+.icon-media-045:before {
+	content: "u";
+}
+.icon-media-032:before {
+	content: "v";
+}
+.icon-media-019:before {
+	content: "w";
+}
+.icon-media-006:before {
+	content: "x";
+}
+.icon-media-007:before {
+	content: "y";
+}
+.icon-media-020:before {
+	content: "z";
+}
+.icon-media-033:before {
+	content: "A";
+}
+.icon-media-046:before {
+	content: "B";
+}
+.icon-media-047:before {
+	content: "C";
+}
+.icon-media-034:before {
+	content: "D";
+}
+.icon-media-021:before {
+	content: "E";
+}
+.icon-media-008:before {
+	content: "F";
+}
+.icon-media-009:before {
+	content: "G";
+}
+.icon-media-022:before {
+	content: "H";
+}
+.icon-media-035:before {
+	content: "I";
+}
+.icon-media-048:before {
+	content: "J";
+}
+.icon-media-049:before {
+	content: "K";
+}
+.icon-media-036:before {
+	content: "L";
+}
+.icon-media-023:before {
+	content: "M";
+}
+.icon-media-010:before {
+	content: "N";
+}
+.icon-media-011:before {
+	content: "O";
+}
+.icon-media-024:before {
+	content: "P";
+}
+.icon-media-037:before {
+	content: "Q";
+}
+.icon-media-050:before {
+	content: "R";
+}
+.icon-media-063:before {
+	content: "S";
+}
+.icon-media-064:before {
+	content: "T";
+}
+.icon-media-051:before {
+	content: "U";
+}
+.icon-media-038:before {
+	content: "V";
+}
+.icon-media-025:before {
+	content: "W";
+}
+.icon-media-012:before {
+	content: "X";
+}
+.icon-media-013:before {
+	content: "Y";
+}
+.icon-media-026:before {
+	content: "Z";
+}
+.icon-media-039:before {
+	content: "0";
+}
+.icon-media-052:before {
+	content: "1";
+}
+.icon-media-065:before {
+	content: "2";
+}
+.icon-media-062:before {
+	content: "3";
+}
+.icon-media-061:before {
+	content: "4";
+}
+.icon-media-060:before {
+	content: "5";
+}
+.icon-media-059:before {
+	content: "6";
+}
+.icon-media-058:before {
+	content: "7";
+}
+.icon-media-057:before {
+	content: "8";
+}
+.icon-media-056:before {
+	content: "9";
+}
+.icon-media-055:before {
+	content: "!";
+}
+.icon-media-054:before {
+	content: "\"";
+}
+.icon-media-053:before {
+	content: "#";
+}
+.icon-media-066:before {
+	content: "$";
+}
+.icon-media-079:before {
+	content: "%";
+}
+.icon-media-092:before {
+	content: "&";
+}
+.icon-media-105:before {
+	content: "'";
+}
+.icon-media-118:before {
+	content: "(";
+}
+.icon-media-119:before {
+	content: ")";
+}
+.icon-media-106:before {
+	content: "*";
+}
+.icon-media-093:before {
+	content: "+";
+}
+.icon-media-080:before {
+	content: ",";
+}
+.icon-media-067:before {
+	content: "-";
+}
+.icon-media-068:before {
+	content: ".";
+}
+.icon-media-081:before {
+	content: "/";
+}
+.icon-media-094:before {
+	content: ":";
+}
+.icon-media-107:before {
+	content: ";";
+}
+.icon-media-120:before {
+	content: "<";
+}
+.icon-media-121:before {
+	content: "=";
+}
+.icon-media-108:before {
+	content: ">";
+}
+.icon-media-095:before {
+	content: "?";
+}
+.icon-media-082:before {
+	content: "@";
+}
+.icon-media-069:before {
+	content: "[";
+}
+.icon-media-070:before {
+	content: "]";
+}
+.icon-media-083:before {
+	content: "^";
+}
+.icon-media-096:before {
+	content: "_";
+}
+.icon-media-109:before {
+	content: "`";
+}
+.icon-media-122:before {
+	content: "{";
+}
+.icon-media-123:before {
+	content: "|";
+}
+.icon-media-110:before {
+	content: "}";
+}
+.icon-media-097:before {
+	content: "~";
+}
+.icon-media-084:before {
+	content: "\\";
+}
+.icon-media-071:before {
+	content: "\e000";
+}
+.icon-media-072:before {
+	content: "\e001";
+}
+.icon-media-085:before {
+	content: "\e002";
+}
+.icon-media-098:before {
+	content: "\e003";
+}
+.icon-media-111:before {
+	content: "\e004";
+}
+.icon-media-124:before {
+	content: "\e005";
+}
+.icon-media-125:before {
+	content: "\e006";
+}
+.icon-media-112:before {
+	content: "\e007";
+}
+.icon-media-099:before {
+	content: "\e008";
+}
+.icon-media-086:before {
+	content: "\e009";
+}
+.icon-media-073:before {
+	content: "\e00a";
+}
+.icon-media-074:before {
+	content: "\e00b";
+}
+.icon-media-087:before {
+	content: "\e00c";
+}
+.icon-media-100:before {
+	content: "\e00d";
+}
+.icon-media-113:before {
+	content: "\e00e";
+}
+.icon-media-126:before {
+	content: "\e00f";
+}
+.icon-media-127:before {
+	content: "\e010";
+}
+.icon-media-114:before {
+	content: "\e011";
+}
+.icon-media-101:before {
+	content: "\e012";
+}
+.icon-media-088:before {
+	content: "\e013";
+}
+.icon-media-075:before {
+	content: "\e014";
+}
+.icon-media-076:before {
+	content: "\e015";
+}
+.icon-media-089:before {
+	content: "\e016";
+}
+.icon-media-090:before {
+	content: "\e017";
+}
+.icon-media-077:before {
+	content: "\e018";
+}
+.icon-media-078:before {
+	content: "\e019";
+}
+.icon-media-091:before {
+	content: "\e01a";
+}
+.icon-media-104:before {
+	content: "\e01b";
+}
+.icon-media-103:before {
+	content: "\e01c";
+}
+.icon-media-102:before {
+	content: "\e01d";
+}
+.icon-media-115:before {
+	content: "\e01e";
+}
+.icon-media-116:before {
+	content: "\e01f";
+}
+.icon-media-117:before {
+	content: "\e020";
+}
+.icon-media-130:before {
+	content: "\e021";
+}
+.icon-media-129:before {
+	content: "\e022";
+}
+.icon-media-128:before {
+	content: "\e023";
+}
+
+/* medical-and-health */
+@font-face {
+	font-family: "medical-and-health";
+	src:url("medical/webfont/fonts/medical-and-health.eot");
+	src:url("medical/webfont/fonts/medical-and-health.eot?#iefix") format("embedded-opentype"),
+	url("medical/webfont/fonts/medical-and-health.woff") format("woff"),
+    url("medical/webfont/fonts/medical-and-health.ttf") format("truetype"),
+	url("medical/webfont/fonts/medical-and-health.svg#medical-and-health") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon-medical]:before {
+	font-family: "medical-and-health" !important;
+	content: attr(data-icon-medical);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-medical"]:before,
+[class*=" icon-medical"]:before {
+	font-family: "medical-and-health" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-medical-001:before {
+	content: "a";
+}
+.icon-medical-002:before {
+	content: "b";
+}
+.icon-medical-015:before {
+	content: "c";
+}
+.icon-medical-014:before {
+	content: "d";
+}
+.icon-medical-027:before {
+	content: "e";
+}
+.icon-medical-028:before {
+	content: "f";
+}
+.icon-medical-029:before {
+	content: "g";
+}
+.icon-medical-016:before {
+	content: "h";
+}
+.icon-medical-003:before {
+	content: "i";
+}
+.icon-medical-004:before {
+	content: "j";
+}
+.icon-medical-017:before {
+	content: "k";
+}
+.icon-medical-030:before {
+	content: "l";
+}
+.icon-medical-031:before {
+	content: "m";
+}
+.icon-medical-018:before {
+	content: "n";
+}
+.icon-medical-005:before {
+	content: "o";
+}
+.icon-medical-006:before {
+	content: "p";
+}
+.icon-medical-019:before {
+	content: "q";
+}
+.icon-medical-032:before {
+	content: "r";
+}
+.icon-medical-033:before {
+	content: "s";
+}
+.icon-medical-020:before {
+	content: "t";
+}
+.icon-medical-007:before {
+	content: "u";
+}
+.icon-medical-008:before {
+	content: "v";
+}
+.icon-medical-021:before {
+	content: "w";
+}
+.icon-medical-034:before {
+	content: "x";
+}
+.icon-medical-035:before {
+	content: "y";
+}
+.icon-medical-022:before {
+	content: "z";
+}
+.icon-medical-009:before {
+	content: "A";
+}
+.icon-medical-010:before {
+	content: "B";
+}
+.icon-medical-023:before {
+	content: "C";
+}
+.icon-medical-036:before {
+	content: "D";
+}
+.icon-medical-037:before {
+	content: "E";
+}
+.icon-medical-024:before {
+	content: "F";
+}
+.icon-medical-011:before {
+	content: "G";
+}
+.icon-medical-012:before {
+	content: "H";
+}
+.icon-medical-025:before {
+	content: "I";
+}
+.icon-medical-038:before {
+	content: "J";
+}
+.icon-medical-039:before {
+	content: "K";
+}
+.icon-medical-026:before {
+	content: "L";
+}
+.icon-medical-013:before {
+	content: "M";
+}
+.icon-medical-040:before {
+	content: "N";
+}
+.icon-medical-053:before {
+	content: "O";
+}
+.icon-medical-066:before {
+	content: "P";
+}
+.icon-medical-079:before {
+	content: "Q";
+}
+.icon-medical-092:before {
+	content: "R";
+}
+.icon-medical-093:before {
+	content: "S";
+}
+.icon-medical-080:before {
+	content: "T";
+}
+.icon-medical-067:before {
+	content: "U";
+}
+.icon-medical-054:before {
+	content: "V";
+}
+.icon-medical-041:before {
+	content: "W";
+}
+.icon-medical-042:before {
+	content: "X";
+}
+.icon-medical-055:before {
+	content: "Y";
+}
+.icon-medical-068:before {
+	content: "Z";
+}
+.icon-medical-081:before {
+	content: "0";
+}
+.icon-medical-094:before {
+	content: "1";
+}
+.icon-medical-096:before {
+	content: "2";
+}
+.icon-medical-082:before {
+	content: "3";
+}
+.icon-medical-095:before {
+	content: "4";
+}
+.icon-medical-069:before {
+	content: "5";
+}
+.icon-medical-056:before {
+	content: "6";
+}
+.icon-medical-043:before {
+	content: "7";
+}
+.icon-medical-044:before {
+	content: "8";
+}
+.icon-medical-057:before {
+	content: "9";
+}
+.icon-medical-070:before {
+	content: "!";
+}
+.icon-medical-083:before {
+	content: "\"";
+}
+.icon-medical-084:before {
+	content: "#";
+}
+.icon-medical-071:before {
+	content: "$";
+}
+.icon-medical-058:before {
+	content: "%";
+}
+.icon-medical-045:before {
+	content: "&";
+}
+.icon-medical-046:before {
+	content: "'";
+}
+.icon-medical-059:before {
+	content: "(";
+}
+.icon-medical-098:before {
+	content: ")";
+}
+.icon-medical-097:before {
+	content: "*";
+}
+.icon-medical-085:before {
+	content: "+";
+}
+.icon-medical-072:before {
+	content: ",";
+}
+.icon-medical-073:before {
+	content: "-";
+}
+.icon-medical-086:before {
+	content: ".";
+}
+.icon-medical-099:before {
+	content: "/";
+}
+.icon-medical-100:before {
+	content: ":";
+}
+.icon-medical-087:before {
+	content: ";";
+}
+.icon-medical-074:before {
+	content: "<";
+}
+.icon-medical-060:before {
+	content: "=";
+}
+.icon-medical-061:before {
+	content: ">";
+}
+.icon-medical-047:before {
+	content: "?";
+}
+.icon-medical-048:before {
+	content: "@";
+}
+.icon-medical-049:before {
+	content: "[";
+}
+.icon-medical-062:before {
+	content: "]";
+}
+.icon-medical-075:before {
+	content: "^";
+}
+.icon-medical-088:before {
+	content: "_";
+}
+.icon-medical-089:before {
+	content: "`";
+}
+.icon-medical-076:before {
+	content: "{";
+}
+.icon-medical-063:before {
+	content: "|";
+}
+.icon-medical-050:before {
+	content: "}";
+}
+.icon-medical-051:before {
+	content: "~";
+}
+.icon-medical-064:before {
+	content: "\\";
+}
+.icon-medical-077:before {
+	content: "\e000";
+}
+.icon-medical-090:before {
+	content: "\e001";
+}
+.icon-medical-091:before {
+	content: "\e002";
+}
+.icon-medical-078:before {
+	content: "\e003";
+}
+.icon-medical-065:before {
+	content: "\e004";
+}
+.icon-medical-052:before {
+	content: "\e005";
+}
+

@@ -1,0 +1,14 @@
+{
+  "name": "felipe-portifolio",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal — site estático, sem build. package.json existe só pra rodar os scripts de manutenção em scripts/.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "otimizar-imagens": "node scripts/otimizar-imagens.mjs",
+    "limpar-icones": "node scripts/limpar-icones.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
